@@ -1,0 +1,24 @@
+{
+  "person": {
+    "name": "Max Mustermann",
+    "title": "Software Engineer",
+    "subtitle": "Systems & Platform"
+  },
+  "contact": {
+    "email": "max@example.com",
+    "phone": "+49 170 1234567",
+    "location": "Berlin",
+    "website": "https://example.com",
+    "github": "https://github.com/example"
+  },
+  "profile": "",
+  "experience": [],
+  "education": [],
+  "projects": [],
+  "competencies": [],
+  "softSkills": [],
+  "languages": [],
+  "technologies": [],
+  "interests": [],
+  "webPresence": []
+}
