@@ -1,0 +1,51 @@
+---
+import Header from "../components/Header.astro";
+import Contact from "../components/side/Contact.astro";
+import Language from "../components/side/Languages.astro";
+
+interface Props {
+    name: string;
+    title: string;
+}
+
+const { name, title } = Astro.props;
+
+const langs = ["Deutsch", "Englisch"];
+---
+
+<div class="cv-container">
+    <Header name={name} title={title} />
+    <div class="cv-content-grid-container">
+        <div class="cv-content-side-container">
+            <Contact email="a@b.com" phone="123 456 789" location="test" />
+            <Language languages={langs} />
+        </div>
+        <div class="cv-content-main-container">b</div>
+    </div>
+</div>
+
+<style>
+    .cv-container {
+        display: block;
+        border-color: black;
+        border-style: solid;
+        size: 21cm 29.7cm;
+    }
+
+    .cv-content-grid-container {
+        display: grid;
+        grid-template-columns: 30% 70%;
+        text-align: center;
+        border-color: black;
+        border-style: solid;
+        width: 100%;
+        height: 100%;
+    }
+
+    .cv-content-side-container {
+        border-color: darkslategray;
+        border-width: 2px;
+        border-right-style: solid;
+        background-color: lightgray;
+    }
+</style>

@@ -1,0 +1,32 @@
+---
+interface Props {
+    email?: string;
+    phone?: string;
+    location?: string;
+    website?: string;
+    github?: string;
+}
+
+const { email, phone, location, website, github } = Astro.props;
+---
+
+<div class="cv-side-contact cv-side">
+    <h3>Kontakt</h3>
+    <ul class="cv-contact-list">
+        {email && <li>{email}</li>}
+        {phone && <li>{phone}</li>}
+        {location && <li>{location}</li>}
+        {website && <li>{website}</li>}
+        {github && <li>{github}</li>}
+    </ul>
+</div>
+
+<style>
+    .cv-side-contact {
+        text-align: left;
+        padding: 12px;
+    }
+    .cv-contact-list {
+        list-style-type: none;
+    }
+</style>

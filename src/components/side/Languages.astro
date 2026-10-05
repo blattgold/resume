@@ -1,0 +1,26 @@
+---
+interface Props {
+    languages: string[];
+}
+
+const { languages } = Astro.props;
+---
+
+<div class="cv-side-contact cv-side">
+    <h3>Sprachen</h3>
+    <ul class="cv-lang-list">
+        {languages.map((language) => (
+            <li>{language}</li>
+        ))}
+    </ul>
+</div>
+
+<style>
+    .cv-side-contact {
+        text-align: left;
+        padding: 12px;
+    }
+    .cv-lang-list {
+        list-style-type: none;
+    }
+</style>
