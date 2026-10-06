@@ -11,14 +11,32 @@
     "website": "https://example.com",
     "github": "https://github.com/example"
   },
-  "profile": "",
-  "experience": [],
-  "education": [],
-  "projects": [],
-  "competencies": [],
-  "softSkills": [],
-  "languages": [],
-  "technologies": [],
-  "interests": [],
-  "webPresence": []
+  "experience": [
+    { "date": "01.01.2010-02.02.2020", "description": "insert a description here" }
+  ],
+  "education": [
+    { "date": "01.01.2010", "description": "insert a description here" }
+  ],
+  "projects": [
+    { "name": "Projekt A", "description": "insert a description here" }
+  ],
+  "competencies": [
+    "A", "B", "C"
+  ],
+  "softSkills": [
+    "Problemlösung", "Teamarbeit"
+  ],
+  "languages": [
+    { "language": "Deutsch", "proficiency": "Muttersprache" },
+    { "language": "Englisch", "proficiency": "Fließend" }
+  ],
+  "technologies": [
+    "Rust", "C"
+  ],
+  "interests": [
+    "Open Source", "Technologie"
+  ],
+  "webPresence": [
+    "www.example.com"
+  ]
 }
