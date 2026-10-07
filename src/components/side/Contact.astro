@@ -1,13 +1,13 @@
 ---
+import type { CVContact } from "../../cv_data_types.ts";
+
 interface Props {
-    email?: string;
-    phone?: string;
-    location?: string;
-    website?: string;
-    github?: string;
+    cvContact: CVContact;
 }
 
-const { email, phone, location, website, github } = Astro.props;
+const {
+    cvContact: { email, phone, location, website, github },
+} = Astro.props;
 ---
 
 <div class="cv-side-contact cv-side">

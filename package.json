@@ -10,16 +10,19 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-
     "prerender": "astro build",
     "render": "node src/scripts/render_pdf.js",
     "postrender": "rm dist/index.html"
   },
   "dependencies": {
     "astro": "^7.3.2",
+    "jsonschema": "^1.5.0",
     "playwright": "^1.63.0"
   },
   "allowScripts": {
     "esbuild": true
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.4"
   }
 }

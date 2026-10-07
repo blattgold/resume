@@ -1,14 +1,21 @@
 ---
+import type { CVData } from "../cv_data_types.ts";
+
 import Header from "../components/Header.astro";
 import Contact from "../components/side/Contact.astro";
 import Language from "../components/side/Languages.astro";
 
 interface Props {
-    name: string;
-    title: string;
+    cvData: CVData;
 }
 
-const { name, title } = Astro.props;
+const {
+    cvData: {
+        person: { name, title, subtitle },
+        contact,
+        languages,
+    },
+} = Astro.props;
 
 const langs = ["Deutsch", "Englisch"];
 ---
@@ -17,8 +24,8 @@ const langs = ["Deutsch", "Englisch"];
     <Header name={name} title={title} />
     <div class="cv-content-grid-container">
         <div class="cv-content-side-container">
-            <Contact email="a@b.com" phone="123 456 789" location="test" />
-            <Language languages={langs} />
+            <Contact cvContact={contact} />
+            <Language languages={languages} />
         </div>
         <div class="cv-content-main-container">b</div>
     </div>

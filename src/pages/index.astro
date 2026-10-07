@@ -1,6 +1,10 @@
 ---
+import { read_data } from "../read_data";
+
 import "../styles/cv.css";
 import Layout from "../layouts/Layout.astro";
+
+const cv_data = await read_data();
 ---
 
 <html lang="en">
@@ -14,6 +18,6 @@ import Layout from "../layouts/Layout.astro";
         <title>Astro</title>
     </head>
     <body>
-        <Layout name="Ashli Graczyk" , title="FIAN" />
+        <Layout cvData={cv_data} />
     </body>
 </html>

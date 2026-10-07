@@ -1,6 +1,8 @@
 ---
+import type { CVLanguageEntry } from "../../cv_data_types";
+
 interface Props {
-    languages: string[];
+    languages: CVLanguageEntry[];
 }
 
 const { languages } = Astro.props;
@@ -10,7 +12,9 @@ const { languages } = Astro.props;
     <h3>Sprachen</h3>
     <ul class="cv-lang-list">
         {languages.map((language) => (
-            <li>{language}</li>
+            <li>
+                {language.language} - {language.proficiency}
+            </li>
         ))}
     </ul>
 </div>
