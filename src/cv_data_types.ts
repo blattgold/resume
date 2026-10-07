@@ -26,7 +26,8 @@ export interface CVSoftSkillsEntry {
 }
 
 export interface CVTechnologyEntry {
-    technology: string;
+    category: string;
+    entries: string[];
 }
 
 export interface CVInterestEntry {

@@ -1,0 +1,21 @@
+---
+import type { CVTechnologyEntry } from "../../cv_data_types.ts";
+
+// invariant: Component must only be constructed if list len > 0
+interface Props {
+    cvTechnologies: CVTechnologyEntry[];
+}
+
+const { cvTechnologies } = Astro.props;
+---
+
+<div class="cv-main-technologies cv-main">
+    <h3>Technologien</h3>
+    <ul class="cv-technologies-list">
+        {cvTechnologies.map(({ category, entries }) => (
+            <li>
+                {category} - {entries.join(", ")}
+            </li>
+        ))}
+    </ul>
+</div>

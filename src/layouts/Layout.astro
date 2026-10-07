@@ -7,13 +7,22 @@ import Language from "../components/side/Languages.astro";
 import Experience from "../components/main/Experience.astro";
 import Education from "../components/main/Education.astro";
 import Projects from "../components/main/Projects.astro";
+import Technologies from "../components/main/Technologies.astro";
 
 interface Props {
     cvData: CVData;
 }
 
 const {
-    cvData: { person, contact, languages, experience, education, projects },
+    cvData: {
+        person,
+        contact,
+        languages,
+        experience,
+        education,
+        projects,
+        technologies,
+    },
 } = Astro.props;
 ---
 
@@ -28,6 +37,9 @@ const {
             {experience.length != 0 && <Experience cvExperience={experience} />}
             {education.length != 0 && <Education cvEducation={education} />}
             {projects.length != 0 && <Projects cvProjects={projects} />}
+            {technologies.length != 0 && (
+                <Technologies cvTechnologies={technologies} />
+            )}
         </div>
     </div>
 </div>
