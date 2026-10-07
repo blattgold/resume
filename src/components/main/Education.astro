@@ -1,0 +1,21 @@
+---
+import type { CVEducationEntry } from "../../cv_data_types.ts";
+
+// invariant: Component must only be constructed if list len > 0
+interface Props {
+    cvEducation: CVEducationEntry[];
+}
+
+const { cvEducation } = Astro.props;
+---
+
+<div class="cv-main-experience cv-main">
+    <h3>Ausbildung & Qualifikationen</h3>
+    <ul class="cv-experience-list">
+        {cvEducation.map(({ date, description }) => (
+            <li>
+                {date} - {description}
+            </li>
+        ))}
+    </ul>
+</div>
