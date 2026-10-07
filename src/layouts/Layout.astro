@@ -8,6 +8,7 @@ import Experience from "../components/main/Experience.astro";
 import Education from "../components/main/Education.astro";
 import Projects from "../components/main/Projects.astro";
 import Technologies from "../components/main/Technologies.astro";
+import WebPresence from "../components/main/WebPresence.astro";
 
 interface Props {
     cvData: CVData;
@@ -22,6 +23,7 @@ const {
         education,
         projects,
         technologies,
+        webPresence,
     },
 } = Astro.props;
 ---
@@ -39,6 +41,9 @@ const {
             {projects.length != 0 && <Projects cvProjects={projects} />}
             {technologies.length != 0 && (
                 <Technologies cvTechnologies={technologies} />
+            )}
+            {webPresence.length != 0 && (
+                <WebPresence cvWebPresence={webPresence} />
             )}
         </div>
     </div>

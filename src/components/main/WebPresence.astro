@@ -1,0 +1,21 @@
+---
+import type { CVWebPresenceEntry } from "../../cv_data_types.ts";
+
+// invariant: Component must only be constructed if list len > 0
+interface Props {
+    cvWebPresence: CVWebPresenceEntry[];
+}
+
+const { cvWebPresence } = Astro.props;
+---
+
+<div class="cv-main-web-presence cv-main">
+    <h3>Web Presenz</h3>
+    <ul class="cv-web-presence-list">
+        {cvWebPresence.map(({ title, url }) => (
+            <li>
+                {title} - {url}
+            </li>
+        ))}
+    </ul>
+</div>
