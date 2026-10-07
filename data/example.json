@@ -31,7 +31,8 @@
     { "language": "Englisch", "proficiency": "Fließend" }
   ],
   "technologies": [
-    "Rust", "C"
+    { "category": "Programmiersprachen", "entries": ["Rust", "C"]},
+    { "category": "Frameworks", "entries": ["tokio", "bevy", "astro"] }
   ],
   "interests": [
     "Open Source", "Technologie"
