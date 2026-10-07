@@ -38,6 +38,7 @@
     "Open Source", "Technologie"
   ],
   "webPresence": [
-    "www.example.com"
+    { "title": "Blog", "url": "https://www.blog.com"},
+    { "title": "Github", "url": "https://github.com"}
   ]
 }

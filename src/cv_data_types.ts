@@ -35,7 +35,8 @@ export interface CVInterestEntry {
 }
 
 export interface CVWebPresenceEntry {
-    interest: string;
+    title: string;
+    url: string;
 }
 
 export interface CVEducationEntry {
