@@ -1,10 +1,13 @@
 ---
+import type { CVPerson } from "../cv_data_types";
+
 interface Props {
-    name: string;
-    title: string;
+    cvPerson: CVPerson;
 }
 
-const { name, title } = Astro.props;
+const {
+    cvPerson: { name, title, subtitle },
+} = Astro.props;
 ---
 
 <div class="cv-header">

@@ -12,7 +12,32 @@ export interface CVContact {
     github?: string;
 }
 
-export interface CVDatedEntry {
+export interface CVExperienceEntry {
+    date: string;
+    description: string;
+}
+
+export interface CVCompetencyEntry {
+    competency: string;
+}
+
+export interface CVSoftSkillsEntry {
+    skill: string;
+}
+
+export interface CVTechnologyEntry {
+    technology: string;
+}
+
+export interface CVInterestEntry {
+    interest: string;
+}
+
+export interface CVWebPresenceEntry {
+    interest: string;
+}
+
+export interface CVEducationEntry {
     date: string;
     description: string;
 }
@@ -38,13 +63,13 @@ export interface CVLanguageEntry {
 export interface CVData {
     person: CVPerson;
     contact: CVContact;
-    experience: CVDatedEntry[];
-    education: CVDatedEntry[];
+    experience: CVExperienceEntry[];
+    education: CVEducationEntry[];
     projects: CVProjectEntry[];
-    competencies: string[];
-    softSkills: string[];
+    competencies: CVCompetencyEntry[];
+    softSkills: CVSoftSkillsEntry[];
     languages: CVLanguageEntry[];
-    technologies: string[];
-    interests: string[];
-    webPresence: string[];
+    technologies: CVTechnologyEntry[];
+    interests: CVInterestEntry[];
+    webPresence: CVWebPresenceEntry[];
 }
