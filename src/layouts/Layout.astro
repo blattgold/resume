@@ -9,6 +9,8 @@ import Education from "../components/main/Education.astro";
 import Projects from "../components/main/Projects.astro";
 import Technologies from "../components/main/Technologies.astro";
 import WebPresence from "../components/main/WebPresence.astro";
+import SoftSkills from "../components/side/SoftSkills.astro";
+import Interests from "../components/side/Interests.astro";
 
 interface Props {
     cvData: CVData;
@@ -24,6 +26,8 @@ const {
         projects,
         technologies,
         webPresence,
+        softSkills,
+        interests,
     },
 } = Astro.props;
 ---
@@ -34,6 +38,8 @@ const {
         <div class="cv-content-side-container">
             <Contact cvContact={contact} />
             {languages.length != 0 && <Language languages={languages} />}
+            {softSkills.length != 0 && <SoftSkills softSkills={softSkills} />}
+            {interests.length != 0 && <Interests interests={interests} />}
         </div>
         <div class="cv-content-main-container">
             {experience.length != 0 && <Experience cvExperience={experience} />}

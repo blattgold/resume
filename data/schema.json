@@ -112,7 +112,15 @@
     "softSkills": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "skill": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "skill"
+        ]
       }
     },
     "languages": {
@@ -157,7 +165,15 @@
     "interests": {
       "type": "array",
       "items": {
-        "type": "string"
+        "type": "object",
+        "properties": {
+          "interest": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "interest"
+        ]
       }
     },
     "webPresence": {

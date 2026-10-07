@@ -1,0 +1,18 @@
+---
+import type { CVInterestEntry } from "../../cv_data_types";
+
+interface Props {
+    interests: CVInterestEntry[];
+}
+
+const { interests } = Astro.props;
+---
+
+<div class="cv-side-interests cv-side">
+    <h3>Interessen</h3>
+    <ul class="cv-interests-list">
+        {interests.map(({ interest }) => (
+            <li>{interest}</li>
+        ))}
+    </ul>
+</div>

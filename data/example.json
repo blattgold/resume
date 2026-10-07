@@ -24,7 +24,7 @@
     "A", "B", "C"
   ],
   "softSkills": [
-    "Problemlösung", "Teamarbeit"
+    { "skill": "Problemlösung" }, { "skill": "Teamarbeit" }
   ],
   "languages": [
     { "language": "Deutsch", "proficiency": "Muttersprache" },
@@ -35,7 +35,7 @@
     { "category": "Frameworks", "entries": ["tokio", "bevy", "astro"] }
   ],
   "interests": [
-    "Open Source", "Technologie"
+    { "interest": "Open Source"}, { "interest": "Technologie" }
   ],
   "webPresence": [
     { "title": "Blog", "url": "https://www.blog.com"},
