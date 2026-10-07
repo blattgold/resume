@@ -4,13 +4,14 @@ import type { CVData } from "../cv_data_types.ts";
 import Header from "../components/Header.astro";
 import Contact from "../components/side/Contact.astro";
 import Language from "../components/side/Languages.astro";
+import Experience from "../components/main/Experience.astro";
 
 interface Props {
     cvData: CVData;
 }
 
 const {
-    cvData: { person, contact, languages },
+    cvData: { person, contact, languages, experience },
 } = Astro.props;
 ---
 
@@ -21,7 +22,9 @@ const {
             <Contact cvContact={contact} />
             {languages.length != 0 && <Language languages={languages} />}
         </div>
-        <div class="cv-content-main-container">b</div>
+        <div class="cv-content-main-container">
+            {experience.length != 0 && <Experience cvExperience={experience} />}
+        </div>
     </div>
 </div>
 
