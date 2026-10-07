@@ -1,0 +1,21 @@
+---
+import type { CVProjectEntry } from "../../cv_data_types.ts";
+
+// invariant: Component must only be constructed if list len > 0
+interface Props {
+    cvProjects: CVProjectEntry[];
+}
+
+const { cvProjects } = Astro.props;
+---
+
+<div class="cv-main-projects cv-main">
+    <h3>Projekte</h3>
+    <ul class="cv-projects-list">
+        {cvProjects.map(({ name, description }) => (
+            <li>
+                {name} - {description}
+            </li>
+        ))}
+    </ul>
+</div>
