@@ -57,26 +57,31 @@ const {
 
 <style>
     .cv-container {
-        display: block;
-        border-color: black;
-        border-style: solid;
-        size: 21cm 29.7cm;
+        width: 21cm;
+        height: 29.7cm;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
     }
 
     .cv-content-grid-container {
+        flex: 1;
         display: grid;
         grid-template-columns: 30% 70%;
         text-align: center;
-        border-color: black;
-        border-style: solid;
         width: 100%;
         height: 100%;
     }
 
     .cv-content-side-container {
-        border-color: darkslategray;
-        border-width: 2px;
-        border-right-style: solid;
+        display: block;
         background-color: lightgray;
+        height: 100%;
+
+        box-sizing: border-box;
+        border-right: 2px solid gray;
+        border-left: 2px solid white;
+        border-bottom: 2px solid gray;
     }
 </style>
