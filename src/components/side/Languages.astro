@@ -10,11 +10,12 @@ const { languages } = Astro.props;
 
 <div class="cv-side-contact cv-side">
     <h3>Sprachen</h3>
-    <ul class="cv-lang-list">
+    <table style="text-align: left; width: 100%;">
         {languages.map((language) => (
-            <li>
-                {language.language} - {language.proficiency}
-            </li>
+            <tr>
+                <td class="cv-side-table-l">{language.language}</td>
+                <td class="cv-side-table-r">{language.proficiency}</td>
+            </tr>
         ))}
-    </ul>
+    </table>
 </div>

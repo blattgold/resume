@@ -8,8 +8,8 @@
     "email": "max@example.com",
     "phone": "+49 170 1234567",
     "location": "Berlin",
-    "website": "https://example.com",
-    "github": "https://github.com/example"
+    "website": "example.com",
+    "github": "github.com/example"
   },
   "experience": [
     { "date": "01.01.2010 - 02.02.2020", "description": "insert a description here" },

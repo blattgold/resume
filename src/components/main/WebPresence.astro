@@ -11,11 +11,12 @@ const { cvWebPresence } = Astro.props;
 
 <div class="cv-main-web-presence cv-main">
     <h3>Web Presenz</h3>
-    <ul class="cv-web-presence-list">
+    <table class="cv-main-table">
         {cvWebPresence.map(({ title, url }) => (
-            <li>
-                {title} - {url}
-            </li>
+            <tr>
+                <td class="cv-main-table-l">{title}</td>
+                <td class="cv-main-table-r">{url}</td>
+            </tr>
         ))}
-    </ul>
+    </table>
 </div>

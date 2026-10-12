@@ -11,27 +11,36 @@ const {
 ---
 
 <div class="cv-header">
-    <div class="cv-header-name-container">
-        <h2 class="cv-header-name">{name}</h2>
-    </div>
-    <div>
-        <h2 class="cv-header-title">{title}</h2>
-        <h3 class="cv-header-subtitle">{subtitle}</h3>
-    </div>
+    <table class="cv-header-table">
+        <tr>
+            <td class="cv-header-name">{name}</td>
+            <td class="cv-header-title">{title}</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>{subtitle}</td>
+        </tr>
+    </table>
 </div>
 
 <style>
     .cv-header {
         text-align: center;
-        display: flex;
+        display: block;
         justify-content: space-around;
-        background-color: lightgray;
+        width: 100%;
+        padding: 20px;
     }
 
-    .cv-header-name {
+    .cv-header-table .cv-header-name {
         display: inline-block;
-        vertical-align: middle;
-        line-height: normal;
+        font-size: 35px;
+        padding-right: 100px;
+        width: 100%;
+        text-align: left;
+    }
+
+    .cv-header-title {
         font-size: 35px;
     }
 

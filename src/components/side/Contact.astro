@@ -12,11 +12,36 @@ const {
 
 <div class="cv-side-contact cv-side">
     <h3>Kontakt</h3>
-    <ul class="cv-contact-list">
-        {email && <li>{email}</li>}
-        {phone && <li>{phone}</li>}
-        {location && <li>{location}</li>}
-        {website && <li>{website}</li>}
-        {github && <li>{github}</li>}
-    </ul>
+    <table style="cv-side-table">
+        {email && (
+            <tr>
+                <td class="cv-side-table-l">Email</td>
+                <td class="cv-side-table-r">{email}</td>
+            </tr>
+        )}
+        {phone && (
+            <tr>
+                <td class="cv-side-table-l">Telefon</td>
+                <td class="cv-side-table-r">{phone}</td>
+            </tr>
+        )}
+        {location && (
+            <tr>
+                <td class="cv-side-table-l">Ort</td>
+                <td class="cv-side-table-r">{location}</td>
+            </tr>
+        )}
+        {website && (
+            <tr>
+                <td class="cv-side-table-l">Webseite</td>
+                <td class="cv-side-table-r">{website}</td>
+            </tr>
+        )}
+        {github && (
+            <tr>
+                <td class="cv-side-table-l">Github</td>
+                <td class="cv-side-table-r">{github}</td>
+            </tr>
+        )}
+    </table>
 </div>
