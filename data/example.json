@@ -12,10 +12,15 @@
     "github": "https://github.com/example"
   },
   "experience": [
-    { "date": "01.01.2010-02.02.2020", "description": "insert a description here" }
+    { "date": "01.01.2010 - 02.02.2020", "description": "insert a description here" },
+    { "date": "03.03.2020 - 05.06.2022", "description": "insert another description here"},
+    { "date": "03.03.2020 - 05.06.2022", "description": "this one has a description that is really long; maybe that is something you would like to have"}
+
   ],
   "education": [
-    { "date": "01.01.2010", "description": "insert a description here" }
+    { "date": "01.01.2010", "description": "insert a description here" },
+    { "date": "03.03.2020", "description": "insert another description here"},
+    { "date": "05.06.2022", "description": "this one has a description that is really long; maybe that is something you would like to have"}
   ],
   "projects": [
     { "name": "Projekt A", "description": "insert a description here" }

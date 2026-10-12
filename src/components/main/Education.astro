@@ -11,11 +11,12 @@ const { cvEducation } = Astro.props;
 
 <div class="cv-main-experience cv-main">
     <h3>Ausbildung & Qualifikationen</h3>
-    <ul class="cv-experience-list">
+    <table class="cv-main-table">
         {cvEducation.map(({ date, description }) => (
-            <li>
-                {date} - {description}
-            </li>
+            <tr>
+                <td class="cv-main-table-l">{date}</td>
+                <td class="cv-main-table-r">{description}</td>
+            </tr>
         ))}
-    </ul>
+    </table>
 </div>

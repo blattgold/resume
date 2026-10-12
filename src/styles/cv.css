@@ -8,4 +8,32 @@
 body {
     background-size: 21cm 29.7cm;
     margin: 0;
+    font-family: Arial;
+}
+
+h3 {
+    text-align: left;
+}
+
+.cv-main-table {
+    width: 100%;
+    border-width: 0;
+    border-collapse: collapse;
+}
+
+.cv-main-table-header {
+    text-align: left;
+    font-size: 20px;
+    padding: 5px 0px 5px 0px;
+}
+
+.cv-main-table-l {
+    white-space: nowrap;
+    text-align: left;
+}
+
+.cv-main-table-r {
+    width: 100%;
+    text-align: left;
+    padding: 5px 5px 5px 20px;
 }
