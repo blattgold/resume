@@ -8,8 +8,8 @@
     "email": "max@example.com",
     "phone": "+49 170 1234567",
     "location": "Berlin",
-    "website": "example.com",
-    "github": "github.com/example"
+    "website": "https://example.com",
+    "github": "https://github.com/example"
   },
   "experience": [
     { "date": "01.01.2010 - 02.02.2020", "description": "insert a description here" },
@@ -26,7 +26,9 @@
     { "name": "Projekt A", "description": "insert a description here" }
   ],
   "competencies": [
-    "A", "B", "C"
+    { "competency": "A"},
+    { "competency": "B"},
+    { "competency": "C"}
   ],
   "softSkills": [
     { "skill": "Problemlösung" }, { "skill": "Teamarbeit" }

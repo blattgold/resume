@@ -17,7 +17,8 @@
   "dependencies": {
     "astro": "^7.3.2",
     "jsonschema": "^1.5.0",
-    "playwright": "^1.63.0"
+    "playwright": "^1.63.0",
+    "ts-json-schema-generator": "^2.9.0"
   },
   "allowScripts": {
     "esbuild": true
