@@ -9,7 +9,7 @@ interface Props {
 const { cvWebPresence } = Astro.props;
 ---
 
-<div class="cv-main-web-presence cv-main">
+<div>
     <h3>Web Presenz</h3>
     <table class="cv-main-table">
         {cvWebPresence.map(({ title, value: { text, url } }) => (

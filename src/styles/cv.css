@@ -21,6 +21,65 @@ a {
     text-decoration: none;
 }
 
+.cv-container {
+    width: 210mm;
+    height: 311.9mm;
+    background-size: 210mm 297mm;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-content-grid-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cv-content-side-container {
+    height: 100%;
+    font-size: 12px;
+
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #eeeeee;
+}
+
+.cv-content-main-container {
+    padding: 20px;
+}
+
+.cv-header {
+    text-align: center;
+    display: block;
+    justify-content: space-around;
+    width: 100%;
+    padding: 20px;
+}
+
+.cv-header-table .cv-header-name {
+    display: inline-block;
+    font-size: 35px;
+    padding-right: 100px;
+    width: 100%;
+    text-align: left;
+}
+
+.cv-header-title {
+    font-size: 35px;
+}
+
+.cv-header-name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 .cv-main-table {
     width: 100%;
     border-width: 0;

@@ -9,7 +9,7 @@ interface Props {
 const { cvTechnologies } = Astro.props;
 ---
 
-<div class="cv-main-technologies cv-main">
+<div>
     <h3>Technologien</h3>
     <table class="cv-main-table">
         {cvTechnologies.map(({ category, entries }) => (
