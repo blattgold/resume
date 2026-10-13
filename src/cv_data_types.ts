@@ -4,12 +4,17 @@ export interface CVPerson {
     subtitle?: string;
 }
 
+export interface CVHyperlinkEntry {
+    text: string;
+    url: string;
+}
+
 export interface CVContact {
     email: string;
     phone?: string;
     location: string;
-    website?: string;
-    github?: string;
+    website?: CVHyperlinkEntry;
+    github?: CVHyperlinkEntry;
 }
 
 export interface CVExperienceEntry {
@@ -36,7 +41,7 @@ export interface CVInterestEntry {
 
 export interface CVWebPresenceEntry {
     title: string;
-    url: string;
+    value: CVHyperlinkEntry;
 }
 
 export interface CVEducationEntry {

@@ -8,8 +8,8 @@
     "email": "max@example.com",
     "phone": "+49 170 1234567",
     "location": "Berlin",
-    "website": "https://example.com",
-    "github": "https://github.com/example"
+    "website": { "text": "example.com", "url": "https://example.com" },
+    "github": { "text": "github.com/example", "url": "https://github.com/example" }
   },
   "experience": [
     { "date": "01.01.2010 - 02.02.2020", "description": "insert a description here" },
@@ -45,7 +45,7 @@
     { "interest": "Open Source"}, { "interest": "Technologie" }
   ],
   "webPresence": [
-    { "title": "Blog", "url": "https://www.blog.com"},
-    { "title": "Github", "url": "https://github.com"}
+    { "title": "Blog", "value": { "text": "www.blog.com", "url": "https://www.blog.com"} },
+    { "title": "Github", "value": { "text": "github.com", "url": "https://github.com"} }
   ]
 }

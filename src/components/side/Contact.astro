@@ -34,13 +34,17 @@ const {
         {website && (
             <tr>
                 <td class="cv-side-table-l">Webseite</td>
-                <td class="cv-side-table-r">{website}</td>
+                <td class="cv-side-table-r">
+                    <a href={website.url}>{website.text}</a>
+                </td>
             </tr>
         )}
         {github && (
             <tr>
                 <td class="cv-side-table-l">Github</td>
-                <td class="cv-side-table-r">{github}</td>
+                <td class="cv-side-table-r">
+                    <a href={github.url}>{github.text}</a>
+                </td>
             </tr>
         )}
     </table>
