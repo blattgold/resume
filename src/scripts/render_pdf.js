@@ -10,7 +10,7 @@ import fs from "fs";
             const browser = await chromium.launch();
             const page = await browser.newPage();
             await page.setContent(data);
-            await page.pdf({ path: "./dist/cv.pdf", preferCSSPageSize: true, printBackground: true });
+            await page.pdf({ path: "./dist/cv.pdf", printBackground: true, format: 'A4' });
             await browser.close();
         }
     });
