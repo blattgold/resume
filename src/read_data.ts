@@ -5,7 +5,7 @@ import { gen_schema } from "./gen_schema";
 
 import type { CVData } from "./cv_data_types";
 
-const DATA_PATH = "./data/example.json";
+const DEFAULT_DATA_PATH = "./data/example.json";
 
 async function read_data_common(path: string): Promise<Object> {
     const data = (await fs.readFile(path)).toString("utf-8");
@@ -13,9 +13,11 @@ async function read_data_common(path: string): Promise<Object> {
     return obj;
 }
 
-export async function read_data(): Promise<CVData> {
+export async function read_data(data_path?: string): Promise<CVData> {
+  data_path = (!data_path) ? DEFAULT_DATA_PATH : data_path;
+
   const schema: Object = gen_schema();
-  const data: Object = await read_data_common(DATA_PATH);
+  const data: Object = await read_data_common(data_path);
 
   const validator = new Validator();
   const result = validator.validate(data, schema);

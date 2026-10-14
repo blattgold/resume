@@ -4,7 +4,7 @@ import { read_data } from "../read_data";
 import "../styles/cv.css";
 import Layout from "../layouts/Layout.astro";
 
-const cv_data = await read_data();
+const cv_data = await read_data(process.env.CV_DATA_PATH);
 ---
 
 <html lang="de">
