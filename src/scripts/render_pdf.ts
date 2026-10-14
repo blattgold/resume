@@ -16,7 +16,7 @@ const PATH_TMP: string = PATH_DIST + "tmp/";
         fs.mkdirSync(PATH_TMP);
     }
 
-    await build({ outDir: "./dist/tmp/" });
+    await build({ outDir: PATH_TMP });
 
     fs.readFile(PATH_TMP + "index.html", "utf8", async (err, data) => {
         if (err) {
