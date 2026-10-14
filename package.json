@@ -10,7 +10,8 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "render": "node src/scripts/render_pdf.ts"
+    "render": "node src/scripts/render_pdf.ts",
+    "test": "node --test"
   },
   "dependencies": {
     "astro": "^7.3.2",

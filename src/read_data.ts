@@ -1,9 +1,9 @@
 import fs from "fs/promises";
 import { Validator } from "jsonschema";
 
-import { gen_schema } from "./gen_schema";
+import { gen_schema } from "./gen_schema.ts";
 
-import type { CVData } from "./cv_data_types";
+import type { CVData } from "./cv_data_types.ts";
 
 const DEFAULT_DATA_PATH = "./data/example.json";
 
