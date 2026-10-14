@@ -7,12 +7,10 @@ const CONFIG: Config = {
     path: "src/cv_data_types.ts",
     type: "CVData",
     topRef: false,
-    encodeRefs: false,
+    encodeRefs: true,
 };
 
 export function gen_schema(): Object {
     const schema = tsj.createGenerator(CONFIG).createSchema(CONFIG.type);
-    console.log("generated schema\n");
-    console.log(JSON.stringify(schema));
     return schema;
 }

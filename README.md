@@ -1,5 +1,24 @@
 
-## Usage Ubuntu
+# Resume/CV-Generator
+
+A CV generator implemented using web technologies. Uses `astro` as the web framework, styled using css. Playwright is used to open a headless browser instance and then to generate a PDF file based on the website. The CV's data is read from a JSON file which is validated using a JSON schema; said schema is generated at runtime, based on the TypeScript data structures.
+
+## Releases
+
+Under `releases` you will find a PDF file which is generated using the example data. This file is updated automatically after every push to `main`.
+
+## Dependencies
+
+I tried to not depend on too many external libraries, although I did use a couple:
+- **astro**: Allows for greater flexibility and modularity compared to static HTML + JS. Components can be developed and changed independently. It also was a good excuse to try something different.
+- **jsonschema**: A basic JSON schema validation library. Using JSON schemas is a lot less error prone and simpler than validating each field manually.
+- **playwright**: Needed to spawn the web browser and generate the pdf file.
+- **ts-json-schema-generator**: By generating the JSON schema at runtime, based on the CV data types, there is only a single source of truth for the desired data structure. It also allows for trivial modifications and adjustments to the data schema, if you, for example, wanted to add another field to one of the components' data.
+
+
+# Usage
+
+## Ubuntu
 
 1. Install the `nodejs` package if it's not already installed: `sudo apt-get install -y nodejs`.
 2. `git clone` this repository and then `cd` into it.
