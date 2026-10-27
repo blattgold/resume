@@ -23,7 +23,7 @@
     { "date": "05.06.2022", "description": "this one has a description that is really long; maybe that is something you would like to have"}
   ],
   "projects": [
-    { "name": "Projekt A", "description": "insert a description here" }
+    { "name": "Projekt A", "link": { "text": "link text", "url": "https://example.com" }, "description": "insert a description here" }
   ],
   "competencies": [
     { "competency": "A"},

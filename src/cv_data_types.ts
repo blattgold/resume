@@ -51,6 +51,7 @@ export interface CVEducationEntry {
 
 export interface CVProjectEntry {
     name: string;
+    link: CVHyperlinkEntry;
     description: string;
 }
 
